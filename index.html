@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cử tri phản ánh - MTTQ Xã Ea Súp</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +33,12 @@
 
             <div class="form-group">
                 <label for="phone">Số điện thoại liên hệ <span class="required">*</span></label>
-                <input type="tel" id="phone" name="phone" required placeholder="Ví dụ: 0912345678" pattern="[0-9]+">
+                <input type="tel" id="phone" name="phone" required placeholder="Ví dụ: 0912345678" pattern="0[35789][0-9]{8}" maxlength="10" title="Số điện thoại phải có 10 chữ số và bắt đầu bằng 03, 05, 07, 08 hoặc 09" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
             </div>
 
             <div class="form-group">
                 <label for="content">Nội dung phản ánh <span class="required">*</span></label>
-                <textarea id="content" name="content" required placeholder="Vui lòng nhập nội dung phản ánh hoặc ý kiến đóng góp tại đây..." rows="5"></textarea>
+                <textarea id="content" name="content" required minlength="10" title="Vui lòng nhập tối thiểu 10 ký tự" placeholder="Vui lòng nhập nội dung phản ánh hoặc ý kiến đóng góp tại đây..." rows="5"></textarea>
             </div>
 
             <button type="submit" id="submitBtn">
