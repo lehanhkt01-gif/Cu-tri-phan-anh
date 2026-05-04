@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz7X2GSFSv47zACFFIy0rueGXtXdR_92eTTjZCZVcHMkMYKbxU1dRX9oVYO3WR8Mjwk/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzuM-1zwcEm3kYM8AKSijgov75C3Gn8rK7QbD-E_b7NUTPdadQecatYlZITtcrVPEMN/exec';
 
 const form = document.getElementById('feedbackForm');
 form.action = GOOGLE_SCRIPT_URL;
